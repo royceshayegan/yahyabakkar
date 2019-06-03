@@ -1,0 +1,105 @@
+::ng-deep.divider-vertical {
+    width: 3px;
+
+    //Position
+
+    &.abs {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    &.sta {
+        position: static;
+    }
+
+    &.rel {
+        position: relative;
+    }
+
+    //Height
+
+    &.xs {
+        height: 80px;
+    }
+
+    &.sm {
+        height: 120px;
+    }
+
+    &.md {
+        height: 160px;
+    }
+
+    &.lg {
+        height: 200px;
+    }
+
+    //Color
+
+    &.red {
+        background-color: #dd1e35;
+    }
+
+    &.white {
+        background-color: #fff;
+    }
+
+    &.black {
+        background-color: rgba(0,0,0,.87);
+    }
+}
+
+::ng-deep.divider-horizontal {
+    height: 3px;
+
+    //Position
+
+    &.abs {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    &.sta {
+        position: static;
+    }
+
+    &.rel {
+        position: relative;
+    }
+
+    //Height
+
+    &.xs {
+        width: 80px;
+    }
+
+    &.sm {
+        width: 120px;
+    }
+
+    &.md {
+        width: 160px;
+    }
+
+    &.lg {
+        width: 200px;
+    }
+
+    //Color
+
+    &.red {
+        background-color: #dd1e35;
+    }
+
+    &.white {
+        background-color: #fff;
+    }
+
+    &.black {
+        background-color: rgba(0,0,0,.87);
+    }
+}

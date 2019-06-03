@@ -1,0 +1,11 @@
+<div class="collapsible-sheath" [hidden]="!isExpanded">
+  <ng-content></ng-content>
+</div>
+<yahya-button>
+  <div class="action">
+    <a class="button red" mat-button (click)="isExpanded = !isExpanded">
+      {{ isExpanded ? "See Less" : "See More" }}
+    </a>
+  </div>
+</yahya-button>
+

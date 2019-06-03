@@ -1,0 +1,64 @@
+@import 'abstracts/_variables';
+
+.topnav {
+    width: 100%;
+    background-color: #dd1e35;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    @media only screen and (min-width: $sm) {
+        height: 80px;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .left, .right {
+            width: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            display: none;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Source Sans Pro', 'Roboto';
+            letter-spacing: 2px;
+            transition: 200ms ease;
+            font-size: 14px;
+            font-weight: 900;
+
+            ::ng-deep .mat-button-focus-overlay {
+                background-color: transparent !important;
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: #dd1e35;
+            }
+
+            @media only screen and (min-width: $sm) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        img {
+            width: 64px;
+            margin: 0px 24px 0 24px;
+            z-index: 1;
+        }
+    }
+}
