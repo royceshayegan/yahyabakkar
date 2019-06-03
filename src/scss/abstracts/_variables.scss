@@ -1,0 +1,46 @@
+// Colors
+
+$white: #fff;
+
+$lightgold: #e3b88a;
+$darkgold: #9b7b5a;
+
+$lightgrey: #f1f1f1;
+
+$grey1: #575757;
+$grey2: #666;
+$darkgrey: #424242;
+
+$orange: #fc9835;
+
+// Fonts
+
+$font-primary: 'Spectral SC', 'Roboto', 'sans-serif';
+$font-secondary: 'Roboto', 'sans-serif';
+
+// Viewports
+
+$sm: 48em;
+$med: 64em;
+$lg: 75em;
+$xl: 88em;
+
+// Containers
+
+$sm-container: 49rem;
+$med-container: 65rem;
+$lg-container: 76rem;
+$xl-container: 89rem;
+
+// Gutters
+
+$gutter: 0.5rem;
+$margin: auto;
+$margin1: -$gutter;
+
+$sm-gutter-right: $gutter;
+$sm-gutter-left: $gutter;
+$med-gutter-right: $gutter;
+$med-gutter-left: $gutter;
+$lg-gutter-right: $gutter;
+$lg-gutter-left: $gutter;

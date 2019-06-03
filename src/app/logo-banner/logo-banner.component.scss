@@ -1,0 +1,27 @@
+.logo-banner {
+    background-color: transparent;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 1.5% 15%;
+    margin-top: 24px;
+
+
+    .inner {
+        background-color: transparent;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    img {
+        margin: 0 24px;
+        margin: 0 2.5%;
+        max-width: 160px;
+        width: 10%;
+        height: 100%;
+    }
+}
