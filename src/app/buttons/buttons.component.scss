@@ -1,121 +1,118 @@
-@import 'abstracts/_variables';
+@import "abstracts/_variables";
 
 ::ng-deep.button {
-    margin: 1rem 0;
-    font-family: 'Source Sans Pro', 'Roboto', 'sans-serif';
-    text-transform: uppercase;
-    font-weight: 600;
+  margin: 1rem 0;
+  font-family: "Source Sans Pro", "Roboto", "sans-serif";
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  line-height: 24px;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
     text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    outline: 0;
+    border: 0;
+  }
+
+  //Size Variations
+
+  &.md {
+    font-size: 14px;
+    padding: 12px 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
+
+  &.lg {
+    font-size: 18px;
     padding: 8px 24px;
     line-height: 24px;
-    border: 0;
-    outline: 0;
-    border-radius: 0;
+    letter-spacing: 5px;
+  }
 
-    &:hover, &:focus {
-        text-decoration: none;
-        outline: 0;
-        border: 0;
+  //Color Variations
+
+  &.red {
+    background-color: #dd1e35;
+    color: #fff;
+    transition: 200ms ease;
+
+    ::ng-deep.mat-button-focus-overlay {
+      background-color: transparent !important;
     }
 
-    //Size Variations
+    &:hover {
+      background-color: #fff;
+      color: #dd1e35;
+    }
+  }
 
-    &.md {
-        font-size: 14px;
-        padding: 12px 24px;
-        line-height: 24px;
-        letter-spacing: 2px;
+  &.white {
+    background-color: #fff;
+    color: #dd1e35;
+    font-family: "DIN", "Roboto";
+    // letter-spacing: 2px;
+    transition: 200ms ease;
+
+    ::ng-deep.mat-button-focus-overlay {
+      background-color: transparent !important;
     }
 
-    &.lg {
-        font-size: 18px;
-        padding: 8px 24px;
-        line-height: 24px;
-        letter-spacing: 5px;
+    &:hover {
+      background-color: #dd1e35;
+      color: #fff;
     }
+  }
 
-    //Color Variations
+  //Icon Styles
 
-    &.red {
-        background-color: #dd1e35;
-        color: #fff;
-        transition: 200ms ease;
+  i.right-align {
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+  }
 
-        ::ng-deep.mat-button-focus-overlay {
-            background-color: transparent !important;
-          }
-    
-        &:hover {
-            background-color: #fff;
-            color: #dd1e35;
-        }
-    }
+  //Button Responsiveness
 
-    &.white {
-        background-color: #fff;
-        color: #dd1e35;
-        font-family: 'DIN', 'Roboto';
-        letter-spacing: 2px;
-        transition: 200ms ease;
-    
-        ::ng-deep.mat-button-focus-overlay {
-            background-color: transparent !important;
-          }
-    
-        &:hover {
-            background-color: #dd1e35;
-            color: #fff;
-        }
-    }
+  @media only screen and (min-width: $sm) {
+    font-size: 18px;
+    padding: 16px 48px;
+    padding: 12px 32px;
+    letter-spacing: 4px;
+  }
 
-    //Icon Styles
-
-    i.right-align {
-        font-size: 20px;
-        width: 24px;
-        height: 24px;
-        margin-left: 6px;
-    }
-
-    //Button Responsiveness
-
-    @media only screen and (min-width: $sm) {
-        font-size: 18px;
-        padding: 16px 48px;
-        padding: 12px 32px;
-        letter-spacing: 4px;
-    }
-
-    @media only screen and (min-width: $med) {
-        font-size: 18px;
-        letter-spacing: 5px;
-        padding: 16px 48px;
-        padding: 24px 48px;
-    }
+  @media only screen and (min-width: $med) {
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 16px 48px;
+    padding: 24px 48px;
+  }
 }
-
 
 //Form Buttons
 
 ::ng-deep.submit {
-    
 }
 
-
-
 ::ng-deep .bg {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 ::ng-deep .action {
-    display: flex;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }

@@ -1,8 +1,8 @@
-@import 'scss/main';
+@import "scss/main";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,17 +20,20 @@ section {
 }
 
 .parallax-window {
-	min-height: 400px;
+  min-height: 400px;
   background: transparent;
 }
 
--webkit-scrollbar, body::-webkit-scrollbar, -webkit-scrollbar {
+-webkit-scrollbar,
+body::-webkit-scrollbar,
+-webkit-scrollbar {
   height: 6px;
   width: 6px;
 }
 
--webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,.26);
+-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.26);
   background-color: #dd1e35;
   outline: 1px solid #333;
 }
@@ -50,53 +53,81 @@ section {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px !important;
+  margin: 0;
+  padding: 0;
+  font-size: 16px !important;
+}
+
+.skew {
+  width: 100%;
+  height: 25vh;
+  height: 560px;
+  bottom: -35%;
+  position: absolute;
+  background-color: #fff;
+
+  @media only screen and (min-width: 900px) {
+    height: 200px;
+    bottom: 0;
+  }
+
+  &.left {
+    transform: skewY(12deg);
+    z-index: 1;
+  }
+
+  &.middle {
+    z-index: 2;
+  }
+
+  &.right {
+    transform: skewY(-12deg);
+    z-index: 1;
+  }
 }
 
 .ytce ul {
-    display: flex !important;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .ytce ul li {
-    margin: 24px 12px !important;
+  margin: 24px 12px !important;
 }
 
 .lity-iframe-container {
-    min-height: 500px;
+  min-height: 500px;
 }
- 
- .biling-text {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items:center;
-   height: 400px;
-   height: auto;
- }
- .change-text {
-   color: #dd1e35;
-   font-size: 72px;
-   text-align: left;
-   max-width: 1200px;
-   font-weight: 700;
-   height: 64px;
-   height: auto;
-   font-family: 'DIN';
-   animation: colorGrad  3s;
-   animation-delay: 3.5s;
-   text-transform: uppercase;
- }
- .constant-text{
-   color: #dd1e35;
-   text-align: center;
-   font-size: 100px;
- }
- 
+
+.biling-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  height: auto;
+}
+.change-text {
+  color: #dd1e35;
+  font-size: 72px;
+  text-align: left;
+  max-width: 1200px;
+  font-weight: 700;
+  height: 64px;
+  height: auto;
+  font-family: "DIN";
+  animation: colorGrad 3s;
+  animation-delay: 3.5s;
+  text-transform: uppercase;
+}
+.constant-text {
+  color: #dd1e35;
+  text-align: center;
+  font-size: 100px;
+}
+
 //  @keyframes colorGrad {
 //      @for $i from 1 through 99 {
 //              #{percentage($i/100)}{
@@ -104,14 +135,22 @@ body {
 //              }
 //      }
 //  }
- 
- @keyframes blinking {
-   0%    { opacity: 0.5; }
-   50%   { opacity: 0; }
-   51%   { opacity: 0.5; }
-   100%  { opacity: 0; }
- }
- .change-text:after {
-   content: '_';
-   animation: blinking  1.2s infinite;
- }
+
+@keyframes blinking {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.change-text:after {
+  content: "_";
+  animation: blinking 1.2s infinite;
+}

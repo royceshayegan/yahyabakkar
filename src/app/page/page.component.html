@@ -3,3 +3,8 @@
   <router-outlet></router-outlet>
   <yahya-footer></yahya-footer>
 </div>
+
+<div class="page-sheath" *ngIf="pageData.pageType === 'noFooter'">
+  <topnav></topnav>
+  <router-outlet></router-outlet>
+</div>
